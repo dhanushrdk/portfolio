@@ -1,0 +1,149 @@
+/* Hero Section Container */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+ background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  flex-wrap: wrap; /* ensures responsiveness */
+}
+
+/* Hero Text */
+.hero-text {
+  max-width: 600px;
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #06e8f8;
+  text-shadow: 0 0 10px #0b0b0b, 0 0 20px #8d8989;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ff66cc;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.hero-btns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-btns a {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+/* Primary Button */
+.btn-primary {
+  background: #00e6e6;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #ff0080;
+  color: #fff;
+  box-shadow: 0 0 20px #ff0080, 0 0 40px #00e6e6;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  border: 2px solid #00e6e6;
+  color: #00e6e6;
+}
+
+.btn-secondary:hover {
+  background: #00e6e6;
+  color: #000;
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeInRight 1.5s ease-in-out;
+  margin-top: 40px; /* spacing on smaller screens */
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 5px solid #00e6e6;
+  box-shadow: 0 0 30px #00e6e6, 0 0 50px #ff0080;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+}

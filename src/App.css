@@ -1,0 +1,21 @@
+body { font-family: "Poppins", sans-serif; color: #fff; min-height: 100vh; }
+
+@media (max-width: 768px) {
+  .hero-container, .about, .skills, .projects-container, .contact { padding: 2rem 5%; }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 { font-size: 2rem; }
+  .hero-text h2 { font-size: 1.5rem; }
+  .hero-text p { font-size: 1rem; }
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .navbar { background-color: #1e1e1e; }
+.dark-mode .hero-btns a, .dark-mode .btn { background-color: #444; }
+.dark-mode .hero-btns a:hover, .dark-mode .btn:hover { background-color: #2196F3; }

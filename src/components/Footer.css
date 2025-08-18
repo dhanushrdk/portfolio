@@ -1,0 +1,20 @@
+/* src/components/Footer.css */
+.footer {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 60px;
+  font-size: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer a {
+  color: #00bfff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: #ff0080;
+}
